@@ -1,0 +1,97 @@
+<!DOCTYPE Project SYSTEM "http://www.slickedit.com/dtd/vse/10.0/vpj.dtd">
+<Project
+	Version="10.0"
+	VendorName="SlickEdit"
+	TemplateName="(Other)"
+	WorkingDir=".">
+	<Config
+		Name="Release"
+		OutputFile=""
+		CompilerConfigName="">
+		<Menu>
+			<Target
+				Name="Compile"
+				MenuCaption="&amp;Compile"
+				CaptureOutputWith="ProcessBuffer"
+				SaveOption="SaveCurrent"
+				RunFromDir="%rw">
+				<Exec/>
+			</Target>
+			<Target
+				Name="Build"
+				MenuCaption="&amp;Build"
+				CaptureOutputWith="ProcessBuffer"
+				SaveOption="SaveWorkspaceFiles"
+				RunFromDir="%rw">
+				<Exec/>
+			</Target>
+			<Target
+				Name="Rebuild"
+				MenuCaption="&amp;Rebuild"
+				CaptureOutputWith="ProcessBuffer"
+				SaveOption="SaveWorkspaceFiles"
+				RunFromDir="%rw">
+				<Exec/>
+			</Target>
+			<Target
+				Name="Debug"
+				MenuCaption="&amp;Debug"
+				SaveOption="SaveNone"
+				RunFromDir="%rw">
+				<Exec/>
+			</Target>
+			<Target
+				Name="Execute"
+				MenuCaption="E&amp;xecute"
+				SaveOption="SaveNone"
+				RunFromDir="%rw">
+				<Exec CmdLine='".exe"'/>
+			</Target>
+		</Menu>
+	</Config>
+	<Files>
+		<Folder
+			Name="Source Files"
+			Filters="*.c;*.C;*.cc;*.cpp;*.cp;*.cxx;*.c++;*.prg;*.pas;*.dpr;*.asm;*.s;*.bas;*.java;*.cs;*.sc;*.e;*.cob;*.html;*.rc;*.tcl;*.py;*.pl;*.d">
+			<F N="Advertorial 2/slickedit_gadgets_advertorial.html"/>
+			<F N="Advertorial 1/slickedit_tools_advertorial.html"/>
+			<F N="Advertorial 4/slickedit_tools_advertorial_2.html"/>
+		</Folder>
+		<Folder
+			Name="Header Files"
+			Filters="*.h;*.H;*.hh;*.hpp;*.hxx;*.inc;*.sh;*.cpy;*.if"/>
+		<Folder
+			Name="Resource Files"
+			Filters="*.ico;*.cur;*.dlg"/>
+		<Folder
+			Name="Bitmaps"
+			Filters="*.bmp"/>
+		<Folder
+			Name="Other Files"
+			Filters="">
+			<F N="Advertorial 4/ACDV_screenshot.jpg"/>
+			<F N="Advertorial 1/backup_history.gif"/>
+			<F N="Advertorial 2/button_downloadtrial.gif"/>
+			<F N="Advertorial 4/clapper.gif"/>
+			<F N="Advertorial 2/cmd_spy.jpg"/>
+			<F N="Advertorial 1/comment_wrapping_after.jpg"/>
+			<F N="Advertorial 1/comment_wrapping_before.jpg"/>
+			<F N="Advertorial 2/data_obj.jpg"/>
+			<F N="Advertorial 4/Diff_screenshot.jpg"/>
+			<F N="Advertorial 1/diffzilla.jpg"/>
+			<F N="Advertorial 2/editor_1.jpg"/>
+			<F N="Advertorial 2/editor_2.jpg"/>
+			<F N="Advertorial 2/file_x.jpg"/>
+			<F N="Advertorial 1/icon_extractor.jpg"/>
+			<F N="Advertorial 4/IconEx_screenshot.jpg"/>
+			<F N="Advertorial 2/lightbulb.gif"/>
+			<F N="Advertorial 2/logo.jpg"/>
+			<F N="Advertorial 1/quickprofiling_linechart2.jpg"/>
+			<F N="Advertorial 1/regex.jpg"/>
+			<F N="Advertorial 4/returntop.gif"/>
+			<F N="Advertorial 4/screenshot.gif"/>
+			<F N="Advertorial 2/sloc.jpg"/>
+			<F N="Advertorial 4/Wrap_screenshot.jpg"/>
+		</Folder>
+	</Files>
+</Project>

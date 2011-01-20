@@ -1,0 +1,67 @@
+[ActiveConfig]
+HtmlTest\HtmlTest.vpj=Release
+[Global]
+CurrentProject=HtmlTest\HtmlTest.vpj
+[ProjectDates]
+CppTest\CppTest.vpj=20110120165712066
+JavaTest\JavaTest.vpj=20110120165642784
+HtmlTest\HtmlTest.vpj=20110120170308899
+[TreeExpansion2]
+- CppTest\CppTest.vpj
+  - Source Files
+    - CppTest\CppTest.cpp
+  - Header Files
+  - Resource Files
+  + Bitmaps
+  + Other Files
+- HtmlTest\HtmlTest.vpj
+  + Source Files
+    - HtmlTest\Advertorial 2\slickedit_gadgets_advertorial.html
+    - HtmlTest\Advertorial 1\slickedit_tools_advertorial.html
+    - HtmlTest\Advertorial 4\slickedit_tools_advertorial_2.html
+  - Header Files
+  - Resource Files
+  - Bitmaps
+  + Other Files
+    - HtmlTest\Advertorial 4\ACDV_screenshot.jpg
+    - HtmlTest\Advertorial 1\backup_history.gif
+    - HtmlTest\Advertorial 2\button_downloadtrial.gif
+    - HtmlTest\Advertorial 4\clapper.gif
+    - HtmlTest\Advertorial 2\cmd_spy.jpg
+    - HtmlTest\Advertorial 1\comment_wrapping_after.jpg
+    - HtmlTest\Advertorial 1\comment_wrapping_before.jpg
+    - HtmlTest\Advertorial 2\data_obj.jpg
+    - HtmlTest\Advertorial 4\Diff_screenshot.jpg
+    - HtmlTest\Advertorial 1\diffzilla.jpg
+    - HtmlTest\Advertorial 2\editor_1.jpg
+    - HtmlTest\Advertorial 2\editor_2.jpg
+    - HtmlTest\Advertorial 2\file_x.jpg
+    - HtmlTest\Advertorial 1\icon_extractor.jpg
+    - HtmlTest\Advertorial 4\IconEx_screenshot.jpg
+    - HtmlTest\Advertorial 2\lightbulb.gif
+    - HtmlTest\Advertorial 2\logo.jpg
+    - HtmlTest\Advertorial 1\quickprofiling_linechart2.jpg
+    - HtmlTest\Advertorial 1\regex.jpg
+    - HtmlTest\Advertorial 4\returntop.gif
+    - HtmlTest\Advertorial 4\screenshot.gif
+    - HtmlTest\Advertorial 2\sloc.jpg
+    - HtmlTest\Advertorial 4\Wrap_screenshot.jpg
+- JavaTest\JavaTest.vpj
+  - JavaTest\AboutDialog.java
+  - JavaTest\ExitDialog.java
+  - JavaTest\JavaTest.java
+scroll:0
+[State]
+SCREEN: 1440 900 46 46 1297 783 0 0 N 0 0 0 0 975 453 0
+CWD: HtmlTest
+FILEHIST: 3
+..\GitJavaTest\GitJavaTest.java
+JavaTest\JavaTest.java
+CppTest\CppTest.cpp
+DEBUG: 0 0 0 0 3 0 gdb
+printf
+strcpy
+std::*
+DEBUG2: 0
+PROJECT_CACHE: 0
+TBCLASS: 0 0

@@ -1,0 +1,387 @@
+<!--------------------------------------------------------------------------->  
+<!--                           INTRODUCTION                                
+
+ The Code Project article submission template (HTML version)
+
+Using this template will help us post your article sooner. To use, just 
+follow the 3 easy steps below:
+ 
+     1. Fill in the article description details
+     2. Add links to your images and downloads
+     3. Include the main article text
+
+That's all there is to it! All formatting will be done by our submission
+scripts and style sheets. 
+
+-->  
+<!--------------------------------------------------------------------------->  
+<!--                        IGNORE THIS SECTION                            -->
+<html>
+<head>
+<title>How We Use SlickEdit® Tools for Microsoft® Visual Studio® 2005</title>
+<Style>
+BODY, P, TD { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 10pt }
+H2,H3,H4,H5 { color: #ff9900; font-weight: bold; }
+H2 { font-size: 13pt; }
+H3 { font-size: 12pt; }
+H4 { font-size: 10pt; color: black; }
+PRE { BACKGROUND-COLOR: #FBEDBB; FONT-FAMILY: "Courier New", Courier, mono; WHITE-SPACE: pre; }
+CODE { COLOR: #990000; FONT-FAMILY: "Courier New", Courier, mono; }
+</style>
+<link rel="stylesheet" type=text/css href="http://www.codeproject.com/styles/global.css">
+</head>
+<body bgcolor="#FFFFFF" color=#000000>
+<!--------------------------------------------------------------------------->  
+
+
+<!--  Fill in the details (CodeProject will reformat this section for you) -->
+
+<pre>
+Title:       How We Use SlickEdit® Tools for Microsoft® Visual Studio® 2005
+Description: Describes how we use some of our favorite features from our own Tools® plug-in product.
+Author:      SlickEdit Inc. 
+Email:       info@slickedit.com
+Technologies:Visual Studio 2005
+Keywords:    Visual Studio, SlickEdit, Plug-In, Add-In, Tools, Productivity, Navigation
+Languages:   All .Net languages and unmanaged C++
+Target Audience: Developers
+Include Dis ussion: Yes
+</pre>
+
+<!--  Add the article text. Please use simple formatting (<h2>, <p> etc)   --> 
+
+<h2>Introduction</h2>
+
+<p>Have you ever bought a fishing pole?  The manual that comes with it will show you how to put it together, 
+how to release the line, change the spool, and many other important functional points about the fishing 
+pole.  But it won't teach you to how to fish.
+
+<p>We've written previous <a href="http://www.codeproject.com/script/Articles/list_articles.asp?userid=3324571">Code Project articles</a>
+that show what features are included in our SlickEdit® Tools for Microsoft® Visual Studio® 2005 product.  It's not 
+just marketing talk when we say that we use our products daily in our own software development.  This article 
+describes how we use those tools at SlickEdit.  <a href="http://www.slickedit.com/content/view/385/234?WT.mc_id=CPMayAdv">A trial version of the product
+may be downloaded by clicking this link.</a>
+
+<br><br>
+<b><a name="quick_links">Quick Links<a></b><br>
+<A href="#feature_1">Auto Code Doc Viewer</A><br>
+<A href="#feature_2">Comment Wrapping</A><br> 
+<A href="#feature_3">Directory Aliases</A><br> 
+<A href="#feature_4">Icon Extractor</A><br>
+<A href="#feature_5">Word Completions</A><br> 
+<A href="#feature_6">Diff With...</A><br> 
+<A href="#feature_7">Take it For a Spin</A>
+
+<br><br>
+
+<table cellpadding=0 cellspacing=0 width="100%" border=0>
+<tr>
+<td align="left" valign="top" nowrap><h2><a name="feature_1">Auto Code Doc Viewer</a></h2></td>
+<td width="100%" align="right" valign="top" nowrap><a href="ACDV_screenshot.jpg"><img src="screenshot.gif" border=0></a></td>
+<td valign="top" nowrap>&nbsp;<a href="ACDV_screenshot.jpg"><font style="font-size: x-small;">[Screenshot]</font></a></td>
+<td align="right" valign="top" nowrap><a href="#quick_links">&nbsp;&nbsp;&nbsp;<img src="returntop.gif" border=0></a></td>
+<td valign="top" nowrap>&nbsp;<a href="#quick_links"><font style="font-size: x-small;">[Back to top]</font></a></td>
+</tr>
+</table>
+On the surface, the Auto Code Doc Viewer looks like it performs the same function as NDoc or Sandcastle.  All 
+of these tools are used to build linked Help for a code base, but Auto Code Doc Viewer is the only one that truly 
+integrates that Help with Visual Studio.
+
+<p>Auto Code Doc Viewer does not use assemblies or reflection to build its Help pages.  Instead, it crawls 
+through the source code to build the documentation database.  The result is an XML file with very rich information 
+about the source code structure, including the header comments for all source code elements.  It then uses this XML 
+document to build Help pages on the fly as you browse them in the viewer.
+
+<p>Because of this, it works with managed and unmanaged code, including C++ and Web projects.  It can even build 
+documentation if the source code doesn't compile.  XMLdoc is parsed to build rich Help if it exists, but if you 
+use block or line comments to document your classes and functions, it will extract them as well.  
+
+<p>Every documented symbol from classes to member variables has a special "code link" icon beside it.  Clicking that 
+icon takes you directly to the source code for that entity.  This bridges the gap between the documentation and the 
+source code.
+
+<br><br><b>How do we use it?</b>
+
+<p>For me, Auto Code Doc Viewer is great for providing a high level view for a code base that's new to me.  I use it for the 
+following:
+<ol>
+<li type="1">If another developer adds a new module to the project or solution, it gives me an easy 
+way to get an overview of it without browsing the source code directly.  Once I'm ready to go to the source code, I use 
+the code link for a particular class or function I'm interested in to take me there directly.</li>
+<li type="1">I love Code Project for learning new things.  Sometimes, though, it's challenging to open completely 
+unknown source code and start making sense of it.  Whenever I download the source code from a Code Project article, 
+Auto Code Doc Viewer is the first thing I use to get a high-level view of what's going on.  It's a great starting 
+point for digging down into the source code.</li>
+</ol>
+
+<b>To try this out, do the following:</b>
+<ol>
+<li type="1">Open a Code Project sample application.</li>
+<li type="1">Open the <b>Auto Code Doc Viewer</b> tool window by choosing <b>SlickEdit > Show Auto Code Doc Viewer</b>.</li>
+<li type="1">The viewer window will appear as a tabbed document, populated with a link for the project.</li>
+<li type="1">By clicking on that link, you can drill down into the namespaces, classes, functions, etc. defined in that project.</li>
+<li type="1">You can also browse the classes, functions, properties, etc. by using the indexes at the top of the page.</li>
+</ol>
+
+<table>
+<tr>
+<td><a href="http://www.slickedit.com/demo-t/autocodedocviewer/autocodedocviewer.html?WT.mc_id=CPMayAdv" target=_blank><img src="clapper.gif" border=0></a></td>
+<td>&nbsp;<a href="http://www.slickedit.com/demo-t/autocodedocviewer/autocodedocviewer.html?WT.mc_id=CPMayAdv" target=_blank>Watch Auto Code Doc Viewer in action...</a></td>
+</tr>
+</table>
+
+<br>
+
+<table cellpadding=0 cellspacing=0 width="100%" border=0>
+<tr>
+<td align="left" valign="top" nowrap><h2><a name="feature_2">Comment Wrapping</a></h2></td>
+<td width="100%" align="right" valign="top" nowrap><a href="Wrap_screenshot.jpg"><img src="screenshot.gif" border=0></a></td>
+<td valign="top" nowrap>&nbsp;<a href="Wrap_screenshot.jpg"><font style="font-size: x-small;">[Screenshot]</font></a></td>
+<td align="right" valign="top" nowrap><a href="#quick_links">&nbsp;&nbsp;&nbsp;<img src="returntop.gif" border=0></a></td>
+<td valign="top" nowrap>&nbsp;<a href="#quick_links"><font style="font-size: x-small;">[Back to top]</font></a></td>
+</tr>
+</table>
+Can you imagine writing a text document in an editor that didn't word wrap?  Unfortunately, as programmers, we 
+do it lots of times every day.  When we write code, we want a code editor which doesn't word wrap.  However, when 
+we write comments, there's no reason why the editor shouldn't word wrap.  How many times have you edited a comment 
+and then had to manually adjust the right side to keep the code well formatted?
+
+<p>Comment wrapping enhances the code editor to word wrap comments as you type. Wrapping works with any type of 
+multi-line comment: line comments, block comments, and XMLdoc and Javadoc comments.  It can even reformat existing 
+comment blocks to your preferred layout.
+
+<br><br><b>How do we use it?</b>
+
+<p>The ease of writing comments with this tool is obvious.  However, I've noticed over time that using this feature 
+has made me a much more effective comment writer because it takes all of the tedious work out of the text formatting.  
+Our source code has become much better documented because of it.
+
+<br><br><b>To try this out, do the following:</b>
+<ol>
+<li type="1">Open a source code file for editing.</li>
+<li type="1">Type /// on the line above a function header (''' for VB).</li>
+<li type="1">A skeleton XMLdoc comment will be created.</li>
+<li type="1">Position the cursor inside the <code>&lt;summary&gt;</code> tag and start typing.</li>
+<li type="1">The text will start wrapping once the comment width is greater than 80 characters.</li>
+</ol>
+<b>NOTE:</b> This is the default behavior.  There are many options available for defining how you want your 
+comments to wrap.<br><br>
+
+<table>
+<tr>
+<td><a href="http://www.slickedit.com/demo-t/commentwrapping/commentwrapping.html?WT.mc_id=CPMayAdv" target=_blank><img src="clapper.gif" border=0></a></td>
+<td>&nbsp;<a href="http://www.slickedit.com/demo-t/commentwrapping/commentwrapping.html?WT.mc_id=CPMayAdv" target=_blank>Watch Comment Wrapping in action...</a></td>
+</tr>
+</table>
+
+<br>
+
+<table cellpadding=0 cellspacing=0 width="100%" border=0>
+<tr>
+<td width="100%" valign="top" nowrap><h2><a name="feature_3">Directory Aliases</a></h2></td>
+<td valign="top" nowrap><a href="#quick_links"><img src="returntop.gif" border=0></a></td>
+<td valign="top" nowrap>&nbsp;<a href="#quick_links"><font style="font-size: x-small;">[Back to top]</font></a></td>
+</tr>
+</table>
+A directory alias is a short identifier for a full directory path.  For instance, <b>winsys</b> might be a directory 
+alias for <i>C:\windows\system32</i>.  Whenever you use the Open or Save dialogs in Visual Studio, type a directory 
+alias and expand it with the <b>Ctrl+Dot</b> key sequence, then press Enter to go there directly.  You'll never need to
+double-click your way through those dialogs again.
+
+<br><br><b>How do we use it?</b>
+
+<p>There are a handful of directories that I'm always browsing to when I use the Open or Save dialogs in Visual 
+Studio.  Some of the directories that I always have aliases for:
+<ul>
+<li type="disc">Our development root directory</li>
+<li type="disc">Any output or log directory</li>
+<li type="disc"><i>C:\Windows\System32</i></li>
+<li type="disc">My personal temp directory</li>
+<li type="disc">Our documentation directory</li>
+</ul>
+
+<b>To try this out, do the following:</b>
+<ol>
+<li type="1">Select the <b>File > Open > File</b> menu option <b>(Ctrl+O)</b> to show the <b>Open File</b> dialog.</li>
+<li type="1">Place the cursor in the <b>File name</b> entry field, and type <b>wd</b>.</li>
+<li type="1">Press <b>Ctrl+Space</b>.  The <b>wd</b> is replaced with <i>C:\Windows</i> (or whatever your %WINDIR% 
+environment variable is defined as).</li>
+<li type="1">Press <b>Enter</b>, and you are now in the <i>C:\Windows</i> directory.</li>
+</ol>
+
+<table>
+<tr>
+<td><a href="http://www.slickedit.com/demo-t/aliases/aliases.html?WT.mc_id=CPMayAdv" target=_blank><img src="clapper.gif" border=0></a></td>
+<td>&nbsp;<a href="http://www.slickedit.com/demo-t/aliases/aliases.html?WT.mc_id=CPMayAdv" target=_blank>Watch Directory Aliases in action...</a></td>
+</tr>
+</table>
+
+<br>
+
+<table cellpadding=0 cellspacing=0 width="100%" border=0>
+<tr>
+<td align="left" valign="top" nowrap><h2><a name="feature_4">Icon Extractor</a></h2></td>
+<td width="100%" align="right" valign="top" nowrap><a href="IconEx_screenshot.jpg"><img src="screenshot.gif" border=0></a></td>
+<td valign="top" nowrap>&nbsp;<a href="IconEx_screenshot.jpg"><font style="font-size: x-small;">[Screenshot]</font></a></td>
+<td align="right" valign="top" nowrap><a href="#quick_links">&nbsp;&nbsp;&nbsp;<img src="returntop.gif" border=0></a></td>
+<td valign="top" nowrap>&nbsp;<a href="#quick_links"><font style="font-size: x-small;">[Back to top]</font></a></td>
+</tr>
+</table>
+The icon extractor is a great tool in two ways: finding quality icons and applying them easily.  Many icons can be obtained
+by browsing any EXE or DLL (managed or unmanaged).  For instance, <i>Windows\System32\shell32.dll</i> has lots 
+of great icons.  There are many other binary files from which icons can be extracted.  Regular icons and images 
+may also be loaded, as well as icon libraries.  The <i>C:\Program Files\Microsoft Visual Studio 8\Common7\VS2005ImageLibrary\bitmaps</i> 
+folder of Visual Studio has a huge number of very good images to use on controls.  It can also be used to retrieve 
+icons common to your applications.  By opening up the binary form of other applications you've developed, you'll 
+have access to the same set of icons to give a similar look and feel.
+
+<p>Perhaps even more important is the ease with which extracted icons and images may be applied to the forms designer.  
+The toolbar has a button to refresh the tool's designer component tree.  This populates a tree that shows a categorized 
+view of the controls in your form designer, including buttons, menus, toolbar buttons, and anything that accepts 
+an image.  You may then simply drag and drop icons from the collection onto the items in the designer control tree.  
+They are updated instantly on the form designer's UI.  If you've ever had to assign lots of images to menu items, 
+you know what a long, lousy job that is.  Now, it's as easy as drag-and-drop.
+
+<br><br><b>How do we use it?</b>
+
+<p>I always use the Icon Extractor to assign the images to my controls.  I start by loading the images from 
+our binaries and picking from that list.  If there's no match in that set, then I usually open up <i>shell32.dll</i>.
+The drag-and-drop application of those images actually makes the task enjoyable.  It's fun to crack open lots of 
+binaries and see what great icons are inside!  
+
+<br><br><b>To try this out, do the following:</b>
+<ol>
+<li type="1">Open the <b>Icon Extractor</b> tool window by choosing <b>SlickEdit > Show Icon Extractor</b>.</li>
+<li type="1">Click on the <b>Open</b> toolbar button.</li>
+<li type="1">Browse to <i>C:\Windows\System32</i>.  Select and open the file <i>shell32.dll</i>.  The icon window will be 
+loaded with the 200+ icons that are embedded in that DLL.</li>
+<li type="1">Create a new Windows application project by choosing <b>File > New > Project</b>.</li>
+<li type="1">Open the GUI editor for the main form and close it's code view if it's open.  Put a button on the form and 
+set the <b>ImageAlign</b> property to <b>MiddleLeft</b>.</li>
+<li type="1">Click the <b>Refresh Designer Component Tree</b> button on the Icon Extractor's toolbar.  The tree will be 
+populated with the components on the designer form.</li>
+<li type="1">Drag an icon from the icon window onto the button's node in the tree.  That icon will be assigned to it
+both in the tree and in the designer.  This works for any control that accepts a graphic or icon, including menus and toolbars.</li>
+</ol>
+
+<p><b>Note:</b> Please check all 
+<a href="http://www.microsoft.com/about/legal/permissions//default.mspx">licensing terms</a> before using any
+copyrighted materials.<br><br>
+
+<table>
+<tr>
+<td><a href="http://www.slickedit.com/demo-t/iconextractor/iconextractor.html?WT.mc_id=CPMayAdv" target=_blank><img src="clapper.gif" border=0></a></td>
+<td>&nbsp;<a href="http://www.slickedit.com/demo-t/iconextractor/iconextractor.html?WT.mc_id=CPMayAdv" target=_blank>Watch the Icon Extractor in action...</a></td>
+</tr>
+</table>
+
+<br>
+
+<table cellpadding=0 cellspacing=0 width="100%" border=0>
+<tr>
+<td width="100%" valign="top" nowrap><h2><a name="feature_5">Word Completions</a></h2></td>
+<td valign="top" nowrap><a href="#quick_links"><img src="returntop.gif" border=0></a></td>
+<td valign="top" nowrap>&nbsp;<a href="#quick_links"><font style="font-size: x-small;">[Back to top]</font></a></td>
+</tr>
+</table>
+Intellisense® is wonderful when it works, but sometimes it can be incomplete or simply not there at all.  The 
+Word Completions feature of SlickEdit Tools is extremely helpful when Intellisense is out to lunch.  The concept is simple; 
+most of the results you get in Intellisense are symbols that you've already typed elsewhere in the file.  The 
+<b>Complete Previous</b> command is bound to the key sequence <b>Ctrl+Shift+Comma</b>.  When this key sequence is pressed, 
+Word Completions finds the first prior word in the file that is a prefix match for what you have started typing.  
+For instance, take the following code sample:
+
+<pre>
+long CModel1DataAccess::Init(LPCTSTR loggingModuleName)
+{
+	lo|
+</pre>
+
+<p>The | represents where the cursor is.  You could use Intellisense's Ctrl+Space to get a list of completions, but 
+the list is huge and "loggingModuleName" appears a long way down the list.  Using Word Completions, <b>Ctrl+Shift+Comma</b> 
+immediately completes to "loggingModuleName" and highlights where it found the match.  If we want to keep searching 
+backwards for more "lo" matches, you can keep pressing <b>Ctrl+Shift+Comma</b>.  The next match is "long", the return type for 
+the function.  
+
+<br><br><b>How do we use it?</b>
+
+<p>At SlickEdit, we do a lot of work in Visual Studio that falls outside the abilities of Intellisense.  In these situations, 
+Word Completions saves an unbelievable amount of time.  Despite its simplicity, the Word Completions feature is 
+addictive.  Once you use it a few times, you'll find yourself using it more than Intellisense.
+
+<br><br><b>To try this out, do the following:</b>
+<ol>
+<li type="1">Open a Code Project sample application.</li>
+<li type="1">Create a blank line at the end of any function and put the cursor there.</li>
+<li type="1">Type the first few letters of any symbol in the function and press <b>Ctrl+Shift+Comma</b></li>
+<li type="1">Word Completions will auto-complete the word and highlight where it was found.</li>
+</ol>
+
+<br>
+
+<table cellpadding=0 cellspacing=0 width="100%" border=0>
+<tr>
+<td align="left" valign="top" nowrap><h2><a name="feature_6">Diff With...</a></h2></td>
+<td width="100%" align="right" valign="top" nowrap><a href="Diff_screenshot.jpg"><img src="screenshot.gif" border=0></a></td>
+<td valign="top" nowrap>&nbsp;<a href="Diff_screenshot.jpg"><font style="font-size: x-small;">[Screenshot]</font></a></td>
+<td align="right" valign="top" nowrap><a href="#quick_links">&nbsp;&nbsp;&nbsp;<img src="returntop.gif" border=0></a></td>
+<td valign="top" nowrap>&nbsp;<a href="#quick_links"><font style="font-size: x-small;">[Back to top]</font></a></td>
+</tr>
+</table>
+SlickEdit Tools comes with DIFFzilla®, which allows you to compare files side-by-side.  There are many differencing tools
+available, but what makes DIFFzilla special is its ability to diff the current buffer with many different sources.  
+DIFFzilla allows line and block differences to be merged, and you can make live edits inside the diff buffers.  You 
+can then save the results directly back to the associated Visual Studio editor, or to a text file.
+
+<p>Here is a summary of the diff functions you can do on the current buffer:
+<ul>
+<li type="disc"><b>Diff with disk file:</b> Diffs the contents of the current buffer with the contents of that 
+buffer's file.  This is an extremely convenient way to find out what changes you have made since you last saved 
+the file, and to be able to merge those changes back if necessary.  You can perform this function by right clicking 
+on an editor tab and clicking <b>Diff with disk file</b>.</li>
+<li type="disc"><b>Diff with Backup History:</b> If you are using SlickEdit Tools Backup History to maintain versions 
+for all file saves, you may select a version in the list and click <b>Run diff on selected backup</b>.  This diffs 
+the contents of the current buffer with the selected Backup History version.  This is another great way to see what 
+changes you've made from a specific point in time and be able to roll them back.</li>
+<li type="disc"><b>Diff with CVS or SourceSafe:</b> DIFFzilla can be set up to work with CVS or Visual SourceSafe® 2005 
+via the Options page.  Doing so will allow you to right-click on any source-controlled file in the current solution 
+and select <b>Diff with CVS</b> or <b>Diff with SourceSafe</b> depending on your source control system.  
+DIFFzilla will show a dialog with a list of versions from which you can pick.  If the file is open in an editor, 
+DIFFzilla will diff that version with the open buffer.  If not, DIFFzilla will diff that version with the file on disk.</li>
+</ul>
+
+<b>How do we use it?</b>
+
+<p>I use the <b>Diff with disk file</b> so often it's starting to wear out.  I re-bound it to the <b>Ctrl+Shift+/</b> key 
+sequence to avoid having to right-click to see this view.  I always use Backup History as well so that when I 
+paint myself into a corner with a file, I don't have to go all the way back to the last time that file was checked in.
+
+<br><br><b>To try this out, do the following:</b>
+<ol>
+<li type="1">Open DIFFzilla directly by choosing <b>SlickEdit > Diff</b>.</li>
+<li type="1">Open any file for editing.</li>
+<li type="1">Change the contents of the editor buffer.</li>
+<li type="1">Right-click on the editor tab and click <b>Diff with Disk File</b>.</li>
+<li type="1">The editor contents and the disk file will be diffed.</li>
+<li type="1">You can merge the contents and save the results directly back to the associated Visual Studio editor.</li>
+</ol>
+
+<br>
+
+<table cellpadding=0 cellspacing=0 width="100%" border=0>
+<tr>
+<td width="100%" valign="top" nowrap><h2><a name="feature_7">Take it For a Spin</a></h2></td>
+<td valign="top" nowrap><a href="#quick_links"><img src="returntop.gif" border=0></a></td>
+<td valign="top" nowrap>&nbsp;<a href="#quick_links"><font style="font-size: small;">Back to top</font></a></td>
+</tr>
+</table>
+At SlickEdit, we are confident that you will be as excited as we are about the latest release of SlickEdit Tools for
+Microsoft Visual Studio 2005.  Download the trial version and try it out for yourself.
+<br><br>
+<b><a href="http://www.slickedit.com/content/view/385/234?WT.mc_id=CPMayAdv">Download the trial of SlickEdit Tools for Microsoft Visual Studio 2005</a></b>
+<br><br>
+<br><br>
+
+<!-------------------------------    That's it!   --------------------------->
+</body>
+</html>
