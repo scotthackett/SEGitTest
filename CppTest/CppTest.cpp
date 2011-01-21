@@ -2,6 +2,8 @@
 
 using namespace std;
 
+// xxx
+
 int main (int argc, char *argv[])
 {
     cout << "hello world" << endl;
