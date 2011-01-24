@@ -70,29 +70,13 @@
 		<Folder
 			Name="Other Files"
 			Filters="">
-			<F N="Advertorial 4/ACDV_screenshot.jpg"/>
 			<F N="Advertorial 1/backup_history.gif"/>
-			<F N="Advertorial 2/button_downloadtrial.gif"/>
-			<F N="Advertorial 4/clapper.gif"/>
-			<F N="Advertorial 2/cmd_spy.jpg"/>
 			<F N="Advertorial 1/comment_wrapping_after.jpg"/>
 			<F N="Advertorial 1/comment_wrapping_before.jpg"/>
-			<F N="Advertorial 2/data_obj.jpg"/>
-			<F N="Advertorial 4/Diff_screenshot.jpg"/>
 			<F N="Advertorial 1/diffzilla.jpg"/>
-			<F N="Advertorial 2/editor_1.jpg"/>
-			<F N="Advertorial 2/editor_2.jpg"/>
-			<F N="Advertorial 2/file_x.jpg"/>
 			<F N="Advertorial 1/icon_extractor.jpg"/>
-			<F N="Advertorial 4/IconEx_screenshot.jpg"/>
-			<F N="Advertorial 2/lightbulb.gif"/>
-			<F N="Advertorial 2/logo.jpg"/>
 			<F N="Advertorial 1/quickprofiling_linechart2.jpg"/>
 			<F N="Advertorial 1/regex.jpg"/>
-			<F N="Advertorial 4/returntop.gif"/>
-			<F N="Advertorial 4/screenshot.gif"/>
-			<F N="Advertorial 2/sloc.jpg"/>
-			<F N="Advertorial 4/Wrap_screenshot.jpg"/>
 		</Folder>
 	</Files>
 </Project>
