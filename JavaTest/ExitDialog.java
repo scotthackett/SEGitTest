@@ -10,6 +10,8 @@ import java.awt.event.*;
 public class ExitDialog extends Dialog
 
 {
+	
+	// This is a change
    Button buttonYes = new Button();
    Button buttonNo = new Button();
    Label label2 = new Label();
