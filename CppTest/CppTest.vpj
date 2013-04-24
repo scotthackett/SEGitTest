@@ -200,7 +200,8 @@
 		<Folder
 			Name="Source Files"
 			Filters="*.c;*.C;*.cc;*.cpp;*.cp;*.cxx;*.c++;*.prg;*.pas;*.dpr;*.asm;*.s;*.bas;*.java;*.cs;*.sc;*.e;*.cob;*.html;*.rc;*.tcl;*.py;*.pl;*.d">
-			<F N="CppTest.cpp"/>
+			<F 
+                N="CppTest.cpp"/>
 		</Folder>
 		<Folder
 			Name="Header Files"
