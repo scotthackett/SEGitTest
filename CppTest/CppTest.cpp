@@ -8,6 +8,7 @@
 
 
 
+// Test comment from SlickEdit
 using namespace std;
 
 // Change
